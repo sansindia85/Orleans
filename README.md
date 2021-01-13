@@ -10,3 +10,5 @@ Presentation : Theory of Orleans concept.
 2 : Orleans with GUID Grain.
 
 3 : Orleans with Compound Grain (Long + string).
+
+4 : Grain Lifecycle
