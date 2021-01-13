@@ -1,4 +1,6 @@
-﻿using Orleans.Configuration;
+﻿using Grains;
+using Orleans;
+using Orleans.Configuration;
 using Orleans.Hosting;
 using System;
 using System.Net;
@@ -17,11 +19,13 @@ namespace SiloHost
         {
             try
             {
-                await StartSilo();
-                Console.WriteLine("Silo started.");
-                
+                var host = await StartSilo();
+
+                Console.WriteLine("Silo started.");                
                 Console.WriteLine("Press enter to terminate.");
                 Console.ReadLine();
+
+                await host.StopAsync();
 
                 return 0;
             }
@@ -55,6 +59,8 @@ namespace SiloHost
                 //There are many other providers such as ADO.Net
                 //Localhost : For Development and single silo
                 .UseLocalhostClustering()
+
+               .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(HelloGrain).Assembly).WithReferences())
 
                 //EndPoints : Silo to Silo endpoints used for communciation between Silos in the same cluster.
                 //            Client to Silo endpoints used for communiation between Clients and Silos in the same cluster.
