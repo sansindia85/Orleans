@@ -19,11 +19,9 @@ namespace Client
             {
                 using (var client = await StartClient())
                 {
-                   
                     Console.WriteLine($"Client is initialized: {client.IsInitialized}");
-
-                    var key = Guid.NewGuid();
-                    IHello grain = client.GetGrain<IHello>(key);
+                    
+                    IHello grain = client.GetGrain<IHello>(0);
                     var response = await grain.SayHelloAsync("Good morning");
                     Console.WriteLine(response);
 

@@ -5,4 +5,5 @@ Folder description:
 
 Presentation : Theory of Orleans concept.
 
-2 : Orleans with Integer Grain.
+1 : Orleans with Integer Grain.
+2 : Orleans with GUID Grain.
