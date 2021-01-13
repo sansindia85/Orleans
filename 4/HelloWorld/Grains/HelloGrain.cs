@@ -18,7 +18,7 @@ namespace Grains
             var primaryKey = this.GetPrimaryKeyLong(out keyExtension);
 
             //This will call Grain Deactivation. This should not be done.
-            this.DeactivateOnIdle();
+            //this.DeactivateOnIdle();
 
             Console.WriteLine($"This is primary key {keyExtension}:{primaryKey}");
             return Task.FromResult($"You said: {greeting}, I say: Hello"); 

@@ -11,4 +11,6 @@ Presentation : Theory of Orleans concept.
 
 3 : Orleans with Compound Grain (Long + string).
 
-4 : Grain Lifecycle
+4 : Grain Lifecycle.
+
+5 : Handle client reconnection with Polly.
