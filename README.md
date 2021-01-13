@@ -6,4 +6,7 @@ Folder description:
 Presentation : Theory of Orleans concept.
 
 1 : Orleans with Integer Grain.
+
 2 : Orleans with GUID Grain.
+
+3 : Orleans with Compound Grain (Long + string).
