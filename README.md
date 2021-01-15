@@ -18,3 +18,5 @@ Presentation : Theory of Orleans concept.
 6: Automate Sql Scripts Deployment with DbUp.
 
 7: Orleans Dashboard
+
+8: Logging filter for Grains
