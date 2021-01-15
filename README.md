@@ -14,3 +14,5 @@ Presentation : Theory of Orleans concept.
 4 : Grain Lifecycle +  Handle client reconnection with Polly.
 
 5: Grain Persistence with ADO.Net (Crunchydata PostgreSQL).
+
+6: Automate Sql Scripts Deployment with DbUp.
