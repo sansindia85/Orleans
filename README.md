@@ -12,3 +12,5 @@ Presentation : Theory of Orleans concept.
 3 : Orleans with Compound Grain (Long + string).
 
 4 : Grain Lifecycle +  Handle client reconnection with Polly.
+
+5: Grain Persistence with ADO.Net (Crunchydata PostgreSQL).
