@@ -16,3 +16,5 @@ Presentation : Theory of Orleans concept.
 5: Grain Persistence with ADO.Net (Crunchydata PostgreSQL).
 
 6: Automate Sql Scripts Deployment with DbUp.
+
+7: Orleans Dashboard
