@@ -24,3 +24,5 @@ Presentation : Theory of Orleans concept.
 9: Request Context
 
 10: Event Sourcing
+
+11: Graceful Shutdown of Silo
