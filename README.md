@@ -26,3 +26,7 @@ Presentation : Theory of Orleans concept.
 10: Event Sourcing
 
 11: Graceful Shutdown of Silo
+
+12: ADO.Net clustering with three Silos.
+
+13. Clustering with Kubernetes

@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: orleans-silo
+    labels:
+        app: kubesilo
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            app: kubesilo
+    template:
+        metadata:
+            labels:
+                app: kubesilo
+        spec:
+            serviceAccountName: orleanssilo
+            containers:
+                - name: orleanssilo
+                  image: testkubesilo:latest
+                  imagePullPolicy: Always
+            imagePullSecrets:
+            - name: genixdevkeynew
+            dnsConfig:
+            options:
+            - name: ndots
+              value: '1'
